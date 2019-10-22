@@ -1,0 +1,22 @@
+mixin footer()
+	+b.FOOTER.footer.block-with-lazy
+		.container
+			.row
+				.col-lg-auto.col
+					a(href='#')
+						+e.title
+							img.res-i(src='img/@2x/footer-logo.jpg' alt='')
+						+e.subtitle Для соревнований
+				.col.d-none.d-lg-block
+					+e.text Медсправка для соревнований
+					+e.text за 
+						span 1500 
+						| рублей.
+					+e.IMG.img-count(src='img/@2x/count.jpg' alt='')
+				.col-lg-auto.col.text-right
+					+e.phone-block
+						+e.phone-img-wrap
+							img(src='img/@2x/f-phone.png' alt='')
+						+e.A.number(href='tel:+74951084614') +7 (495) 
+							span 108-46-14
+					+e.time с 09:00 до 22:00

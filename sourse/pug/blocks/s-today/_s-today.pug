@@ -1,0 +1,42 @@
+mixin s-today()
+	// start s-today
+	+b.SECTION.s-today.bg-wrap.section#s-today&attributes(attributes)
+		+pic('today-bg.jpg','bg')(class='picture-bg')
+		.container
+			h2 оформим сегодня 
+				span доставим завтра
+			+e.row-wrap
+				.row
+					.col-md-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/today-i.png' alt='')
+							+e.text Не нужно тратить время на запись к врачам, сдачу анализов и много других неприятных процедур
+					.col-md-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/today-i.png' alt='')
+							+e.text Вам не придётся бегать из одного кабинета в другой, пытаясь сократить время приёма и побыстрее вернуться к своим делам
+					.col-md-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/today-i.png' alt='')
+							+e.text Никаких талончиков, номерков, угрю-мых взглядов в поликлинике - наши сотрудники ценят комфорт клиентов!
+					.col-md-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/today-i.png' alt='')
+							+e.text В течение суток вы получаете необходимые подписи, печати и готовый документ
+					.col-md-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/today-i.png' alt='')
+							+e.text Мы доставляем справки БЕСПЛАТНО в любой район Москвы в пределах МКАД.
+					.col-md-6
+						+e.item
+							+e.img-wrap
+								img.res-i(src='img/@2x/today-i.png' alt='')
+							+e.text Курьерская служба привезет справку в любое удобное для вас место: к станции метро, на дом или в офис.
+					.col-md-6
+						+e.btn.btn(href='#') Заказать справку с доставкой
+	// end s-today

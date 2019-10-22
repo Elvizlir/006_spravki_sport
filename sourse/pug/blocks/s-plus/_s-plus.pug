@@ -1,0 +1,64 @@
+mixin s-plus()
+	// start s-plus
+	+b.SECTION.s-plus.bg-wrap.section#s-plus&attributes(attributes)
+		+pic('plus-bg.jpg','bg')(class='picture-bg')
+		.container
+			.row.justify-content-end
+				.col-lg-8
+					h2
+						span Плюсы 
+						| работы с нами
+					+e.row-wrap
+						.row
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i1.png' alt='')
+									+e.title-wrap
+										+e.item-title 2500+
+										+e.item-descr довольных клиентов
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i2.png' alt='')
+									+e.title-wrap
+										+e.item-title 100%
+										+e.item-descr подлинность документа
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i3.png' alt='')
+									+e.title-wrap
+										+e.item-title Все
+										+e.item-descr районы Москвы
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i4.png' alt='')
+									+e.title-wrap
+										+e.item-title Лучшие
+										+e.item-descr стоимость в Москве
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i5.png' alt='')
+									+e.title-wrap
+										+e.item-title 1 день
+										+e.item-descr на создание и доставку
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i6.png' alt='')
+									+e.title-wrap
+										+e.item-title Онлайн
+										+e.item-descr довольных клиентов
+							.col-md-6
+								+e.item
+									+e.img-wrap
+										img.res-i(src='img/@2x/plus-i7.png' alt='')
+									+e.title-wrap
+										+e.item-title Удобные
+										+e.item-descr способы оплаты для&nbsp;Вашего&nbsp;заказа
+							.col-md-6
+								+e.btn.btn(href='#') Заказать справку на спорт
+	// end s-plus

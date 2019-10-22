@@ -1,0 +1,5 @@
+JSCCommons-question();
+	s-question() {
+
+	}
+	

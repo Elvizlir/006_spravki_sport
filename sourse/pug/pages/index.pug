@@ -1,0 +1,40 @@
+extends layout/main.pug
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-question/_s-question.pug
+include ../blocks/s-offer/_s-offer.pug
+include ../blocks/s-garant/_s-garant.pug
+include ../blocks/s-plus/_s-plus.pug
+include ../blocks/s-today/_s-today.pug
+include ../blocks/s-how-work/_s-how-work.pug
+include ../blocks/s-rew/_s-rew.pug
+include ../blocks/s-order/_s-order.pug
+include ../blocks/s-list/_s-list.pug
+
+block pagecontent
+ 
+	+mob-mnu()
+	+header()
+		+top-nav()
+		+header-block()
+	+s-form()
+	+s-question('1')
+	+s-question('2')
+	+s-offer()
+	+s-garant()
+	+s-plus()
+	+s-today()
+	+s-how-work()
+	+s-rew()
+	+s-order()
+	+s-list()
+	+s-contact()
+	+footer()
+

@@ -1,0 +1,18 @@
+mixin s-offer()
+	// start s-offer
+	+b.SECTION.s-offer.bg-wrap.section#s-offer&attributes(attributes)
+		+pic('offer-bg.jpg','bg')(class='picture-bg')
+		.container
+			h2 Что мы предлагаем?
+			+e.text Мы предлагаем облегчённый вариант получения данного документа, который не отнимет у вас много времени и сил.
+			+e.text--white Достаточно заполнить заявку прямо на сайте или позвонить по указанному номеру и СПРАВКА&nbsp;ДЛЯ СОРЕВНОВАНИЙ будет у Вас на&nbsp;руках 
+				strong в течение суток !
+			.row
+				.col-md
+					+e.btn.btn(href='#') Заказать справку
+				.col-md-auto
+					+e.or или
+				.col-md
+					+e.A.phone(href='tel:+74951084614') +7 (495) 
+						span 108-46-14
+	// end s-offer

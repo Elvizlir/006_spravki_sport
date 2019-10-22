@@ -1,0 +1,29 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.bg-wrap.block-with-lazy#s-contact&attributes(attributes)
+		+pic('cont-bg.jpg','bg')(class='picture-bg')
+		.container
+			.row
+				.col-xl-4
+					+e.item-title Задать вопрос
+					+e.text Свяжемся с Вами через 30 минут
+					+form-wrap
+						+input('Введите имя')
+						+input('Введите телефон')
+						+input('Введите сообщение','textarea')
+						+e.btn.btn(type="submit") Задать вопрос
+				.col-xl.col-md-6.order-md-last
+					+e.map-block
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1bf0de8e03fa9fb38de02c71bbd4bb643cffa243a76c42153c8df8bfdd80198b&amp;source=constructor" width="405" height="360" frameborder="0"></iframe>
+				.col-xl-auto.col-md-6
+					+e.item
+						+e.item-title Позвонить нам
+						+e.A.text--link(href='tel:+74951084614') +7 (495) 108-46-14
+						+e.text Время работы с 09:00 - 22:00
+					+e.item
+						+e.item-title Написать нам
+						+e.A.text--link(href='mailto:mail@spravka-sport.net') mail@spravka-sport.net
+					+e.item
+						+e.item-title Наш адрес
+						+e.text--link Москва, ул. Волхонка 9, офис 12
+	// end s-contact

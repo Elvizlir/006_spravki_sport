@@ -1,0 +1,8 @@
+
+
+@include font-face ("Proxima", "../fonts/ProximaNova-Regular", $file-formats: woff2);
+@include font-face ("Proxima", "../fonts/ProximaNova-Bold", 700, $file-formats: woff2);
+@include font-face ("Proxima", "../fonts/ProximaNova-Black", 900, $file-formats: woff2);
+@include font-face ("Museo", "../fonts/MuseoSansCyrl-500", $file-formats: woff2);
+@include font-face ("Museo", "../fonts/MuseoSansCyrl-700", 700, $file-formats: woff2);
+@include font-face ("Museo", "../fonts/MuseoSansCyrl-900", 900, $file-formats: woff2);
