@@ -35,6 +35,9 @@
 }
 
 .phone-btn{
+	@include media-breakpoint-up(xl){
+		display: none;
+	}
 	@extend .btn;
 	width: rem(70);
 	padding: rem(5);

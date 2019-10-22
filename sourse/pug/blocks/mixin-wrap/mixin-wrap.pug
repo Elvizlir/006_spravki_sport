@@ -142,6 +142,10 @@ mixin add-mnu()
 	+e.UL.nav.fixed-nav
 		each linkPatch, linkName in nav
 			+e.LI.item: +e.A.link(href= linkPatch)= linkName
+	+e.phone-block
+		+e.A.number(href='tel:+74951084614') +7 (495) 
+			span 108-46-14
+		+e.time с 09:00 до 22:00
 //- /menu
 
 

@@ -343,6 +343,15 @@ $h: em(2);
 		}
 	}
 
+	.menu-mobile__phone-block{
+		text-align: center;
+		a{
+			@extend .mono;
+			font-size: rem(24);
+			font-weight: 700;
+		}
+	}
+
 	.toggle-menu-mobile {
 		// position: relative;
 		cursor: pointer;
@@ -376,6 +385,7 @@ $h: em(2);
 	}
 
 	li {
+		border-bottom: 1px solid #333333;
 		display: block;
 		margin: 0;
 		border-top: 1px solid rgba(255, 255, 255, .13);
