@@ -121,7 +121,25 @@ mixin mnu()
 			"Отзывы":"#",
 			"Контакты":"#"
 			}
-	+e.UL.nav
+	+e.UL.nav.static-nav
+		each linkPatch, linkName in nav
+			+e.LI.item: +e.A.link(href= linkPatch)= linkName
+//- /menu
+
+
+mixin add-mnu()
+	-
+		var nav= {
+			"Главная":"#",
+			"Почему мы":"#",
+			"Доставка":"#",
+			"Как мы работаем":"#",
+			"Справки":"#",
+			"Отзывы":"#",
+			"Контакты":"#",
+			"Заказать":"#"
+			}
+	+e.UL.nav.fixed-nav
 		each linkPatch, linkName in nav
 			+e.LI.item: +e.A.link(href= linkPatch)= linkName
 //- /menu
@@ -165,6 +183,10 @@ mixin pic( i, bg, lazy="lazy", media='576px')
 //- +pic('','head-img-4',"")
 
 
+
+mixin phone-btn
+	+b.A.phone-btn(href='tel:+74951084614')
+			img(src='img/@2x/phone.png' alt='')
  
 		 
 //- /picture

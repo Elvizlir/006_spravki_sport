@@ -2,6 +2,20 @@
 	@include media-breakpoint-up(lg){
 		padding: rem(85) 0 rem(130);
 	}
+	.top-block-bg{
+		img{
+			@include media-breakpoint-down(lg){
+				object-position: left;
+			}
+		}
+	}
+	.bottom-block-bg{
+		img{
+			@include media-breakpoint-down(lg){
+				object-position: right;
+			}
+		}
+	}
 	padding: rem(40) 0 rem(50);
 	h2{
 		@include media-breakpoint-up(lg){

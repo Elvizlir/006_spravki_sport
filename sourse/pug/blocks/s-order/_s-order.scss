@@ -3,6 +3,13 @@
 		padding: rem(80) 0 rem(50); 
 	}
 	padding: rem(40) 0 rem(50); 
+	.picture-bg{
+		img{
+			@include media-breakpoint-down(lg){
+				object-position: right;
+			}
+		}
+	}
 	h2{
 		text-transform: uppercase;
 		font-weight: 900;

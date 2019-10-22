@@ -50,7 +50,9 @@ function 	eventHandler() {
 		// 
 		// скрывает моб меню
 
-		const topH = $("header ").innerHeight();
+		const topH = $("header").innerHeight();
+		const topN = $("header").innerHeight() / 2;
+		// const topN = $(".top-nav").innerHeight();
 
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > topH) {
@@ -59,8 +61,17 @@ function 	eventHandler() {
 				$('.top-nav  ').removeClass('fixed');
 			}
 		});
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > topN) {
+				$('.top-nav  ').addClass('fixed-style');
+				$('.top-nav  ').removeClass('static-style');
+			} else {
+				$('.top-nav  ').addClass('static-style');
+				$('.top-nav  ').removeClass('fixed-style');
+			}
+		});
 		// конец добавил
-		if (window.matchMedia("(min-width: 992px)").matches) {
+		if (window.matchMedia("(min-width: 1200px)").matches) {
 
 			btnToggle.removeClass("on");
 			// $("body").removeClass("fixed");

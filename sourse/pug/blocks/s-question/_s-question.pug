@@ -2,7 +2,7 @@ mixin s-question(t)
 	// start s-question
 	+b.SECTION.s-question.bg-wrap.section&attributes(attributes)
 		if t == '1'
-			+pic('s-q1.jpg','bg')(class='picture-bg')
+			+pic('s-q1.jpg','bg')(class='picture-bg top-block-bg')
 			.container
 				.row
 					.col-lg-8
@@ -18,7 +18,7 @@ mixin s-question(t)
 							strong справки 073 для спортивных соревнований 
 							| откладывается до момента, когда человек пройдет расширенную диагностику.
 		if t == '2'
-			+pic('s-q2.jpg','bg')(class='picture-bg')
+			+pic('s-q2.jpg','bg')(class='picture-bg bottom-block-bg')
 			.container
 				.row.justify-content-end
 					.col-lg-7

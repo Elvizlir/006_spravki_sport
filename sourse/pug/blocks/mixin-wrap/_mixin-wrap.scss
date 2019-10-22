@@ -34,3 +34,20 @@
 	}
 }
 
+.phone-btn{
+	@extend .btn;
+	width: rem(70);
+	padding: rem(5);
+	position: fixed;
+	top: 30vh;
+	right: 0;
+	border-radius: rem(10) 0 0 rem(10);
+	background-color: $secondary;
+	display: block;
+	z-index: 5;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
