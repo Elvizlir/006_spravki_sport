@@ -56,6 +56,7 @@
 		margin-left: auto;
 		// max-width: rem(405);
 		iframe{
+			border: none;
 			width: 100%;
 			@include media-breakpoint-down(sm){
 				position: absolute;
