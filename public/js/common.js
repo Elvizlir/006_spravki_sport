@@ -128,7 +128,19 @@ function eventHandler() {
 			// 	}
 
 		}]
-	})); // $('.s-gal__slider\
+	}));
+	$('.scroll-link').on('click', function () {
+		var el = $(this);
+		var dest = el.attr('href');
+
+		if (dest !== undefined && dest !== '') {
+			$('html').animate({
+				scrollTop: $(dest).offset().top
+			}, 500);
+		}
+
+		return false;
+	}); // $('.s-gal__slider\
 	// ,.slider-for2 ')
 	// 	.on('lazyLoaded', function (event, slick, image, imageSource) {
 	// 		image.parent().css('background-image', 'url(' + image.attr('src') + ')');

@@ -20,7 +20,10 @@ html {
 
 body,
 html {
-	font-size: $em-base;
+	font-size: rem(16);
+	@include media-breakpoint-up(md){
+		font-size: $em-base;
+	}
 	// @include font-size(1rem);
 }
 

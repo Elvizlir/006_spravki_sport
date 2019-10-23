@@ -116,32 +116,32 @@ mixin soc()
 mixin mnu()
 	-
 		var nav= {
-			"Почему мы":"#",
-			"Доставка":"#",
-			"Отзывы":"#",
-			"Контакты":"#"
+			"Почему мы":"#s-offer",
+			"Доставка":"#s-today",
+			"Отзывы":"#s-rew",
+			"Контакты":"#s-contact"
 			}
 	+e.UL.nav.static-nav
 		each linkPatch, linkName in nav
-			+e.LI.item: +e.A.link(href= linkPatch)= linkName
+			+e.LI.item: +e.A.link.scroll-link(href= linkPatch)= linkName
 //- /menu
 
 
 mixin add-mnu()
 	-
 		var nav= {
-			"Главная":"#",
-			"Почему мы":"#",
-			"Доставка":"#",
-			"Как мы работаем":"#",
-			"Справки":"#",
-			"Отзывы":"#",
-			"Контакты":"#",
-			"Заказать":"#"
+			"Главная":"#header-block",
+			"Почему мы":"#s-offer",
+			"Доставка":"#s-today",
+			"Как мы работаем":"#s-how-work",
+			"Справки":"#s-list",
+			"Отзывы":"#s-rew",
+			"Контакты":"#s-contact",
+			"Заказать":"#s-order"
 			}
 	+e.UL.nav.fixed-nav
 		each linkPatch, linkName in nav
-			+e.LI.item: +e.A.link(href= linkPatch)= linkName
+			+e.LI.item: +e.A.link.scroll-link(href= linkPatch)= linkName
 	+e.phone-block
 		+e.A.number(href='tel:+74951084614') +7 (495) 
 			span 108-46-14

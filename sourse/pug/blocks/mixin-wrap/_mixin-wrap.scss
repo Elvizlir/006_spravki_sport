@@ -42,7 +42,10 @@
 	width: rem(70);
 	padding: rem(5);
 	position: fixed;
-	top: 30vh;
+	top: 20vh;
+	@include media-breakpoint-up(lg){
+		top: 30vh;
+	}
 	right: 0;
 	border-radius: rem(10) 0 0 rem(10);
 	background-color: $secondary;
