@@ -6,6 +6,14 @@
 	@include mt;
 	top: 0;
 	left: 0;
+	&__mnu-col{
+		.top-nav__phone-block{
+			@include media-breakpoint-up(lg){
+				display: none !important;
+			}
+		}
+	}
+		
 	&.fixed {
 		position: fixed;
 		width: 100%;
