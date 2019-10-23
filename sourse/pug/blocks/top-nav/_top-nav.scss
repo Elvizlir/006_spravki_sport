@@ -13,7 +13,10 @@
 			}
 		}
 	}
-		
+	.logo-title{
+		text-transform: uppercase;
+		font-weight: 700;
+	}
 	&.fixed {
 		position: fixed;
 		width: 100%;
@@ -43,7 +46,33 @@
 				@extend .col;
 				@extend .col-xl-auto;
 			}
-			&__static-img{
+			&__fixed-title{
+				position: relative;
+				z-index: 2;
+				font-size: rem(22);
+				@include media-breakpoint-up(md){
+					font-size: rem(29);
+				}
+				span{
+					margin-left: rem(23);
+				}
+				&::after{
+					z-index: -1;
+					content: '';
+					@include a-cent(y);
+					left: 41%;
+					width: rem(28);
+					height: rem(28);
+					@include media-breakpoint-up(md){
+						width: rem(34);
+						height: rem(34);
+					}
+					background-image: url(../img/@2x/logo1.png);
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			}
+			&__static-title{
 				display: none;
 			}
 			&__nav {
@@ -92,9 +121,6 @@
 			&__subtitle{
 				line-height: 1;
 				display: block;
-				@include media-breakpoint-down(xs){
-					font-size: rem(12);
-				}
 				font-size: rem(16);
 			}
 			&__phone-block{
@@ -107,15 +133,12 @@
 				font-size: rem(14);
 				@include media-breakpoint-up(sm){
 					font-size: rem(20);
-					padding-top: rem(3);
 				}
 				@include media-breakpoint-up(md){
 					font-size: rem(29);
-					padding-top: rem(5);
 				}
 				font-weight: 300;
 				display: block;
-				line-height: 1;
 				margin-bottom: rem(5);
 				@extend .mono;
 				color: $body-color;
@@ -165,7 +188,32 @@
 			&__phone-col{
 				@extend .d-none;
 			}
-			&__fixed-img{
+			&__title-block{
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			&__static-title{
+				font-weight: 700;
+				position: relative;
+				font-size: rem(20);
+				z-index: 2;
+				span{
+					margin-left: rem(20);
+				}
+				&::after{
+					z-index: -1;
+					content: '';
+					@include a-cent(y);
+					left: 41%;
+					width: rem(25);
+					height: rem(25);
+					background-image: url(../img/@2x/logo2.png);
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+			}
+			&__fixed-title{
 				display: none;
 			}
 			&__subtitle{

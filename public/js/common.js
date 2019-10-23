@@ -44,8 +44,7 @@ function eventHandler() {
 		// скрывает моб меню
 
 		var topH = $("header").innerHeight();
-		var topN = $("header").innerHeight() / 2; // const topN = $(".top-nav").innerHeight();
-
+		var topN = $("header").innerHeight() / 2;
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > topH) {
 				$('.top-nav  ').addClass('fixed');
@@ -64,8 +63,7 @@ function eventHandler() {
 		}); // конец добавил
 
 		if (window.matchMedia("(min-width: 1200px)").matches) {
-			btnToggle.removeClass("on"); // $("body").removeClass("fixed");
-
+			btnToggle.removeClass("on");
 			menu.removeClass("active");
 			$("body").removeClass("fixed");
 		}
@@ -76,9 +74,12 @@ function eventHandler() {
 	});
 	heightses(); // листалка по стр
 
-	$(" .top-nav li a, .scroll-link").click(function () {
+	$(".scroll-link").click(function () {
 		var elementClick = $(this).attr("href");
 		var destination = $(elementClick).offset().top;
+		btnToggle.removeClass("on");
+		$("body").removeClass("fixed");
+		menu.removeClass("active");
 		$('html, body').animate({
 			scrollTop: destination
 		}, 1100);
@@ -128,19 +129,7 @@ function eventHandler() {
 			// 	}
 
 		}]
-	}));
-	$('.scroll-link').on('click', function () {
-		var el = $(this);
-		var dest = el.attr('href');
-
-		if (dest !== undefined && dest !== '') {
-			$('html').animate({
-				scrollTop: $(dest).offset().top
-			}, 500);
-		}
-
-		return false;
-	}); // $('.s-gal__slider\
+	})); // $('.s-gal__slider\
 	// ,.slider-for2 ')
 	// 	.on('lazyLoaded', function (event, slick, image, imageSource) {
 	// 		image.parent().css('background-image', 'url(' + image.attr('src') + ')');

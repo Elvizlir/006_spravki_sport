@@ -48,29 +48,12 @@
 	&__map-block{
 		@include media-breakpoint-down(sm){
 			margin-bottom: rem(20);
-			@include block(405,360);
 		}
-		@include media-breakpoint-up(lg){
-			@include block(405,360);
-		}
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin-left: auto;
-		// max-width: rem(405);
-		iframe{
-			border: none;
-			width: 100%;
-			@include media-breakpoint-down(sm){
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-			}
-			@include media-breakpoint-up(lg){
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-			} 
-		}
 	}
 	//
 	@include media-breakpoint-up(xl) {}

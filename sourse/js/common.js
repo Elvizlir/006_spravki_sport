@@ -52,7 +52,6 @@ function 	eventHandler() {
 
 		const topH = $("header").innerHeight();
 		const topN = $("header").innerHeight() / 2;
-		// const topN = $(".top-nav").innerHeight();
 
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > topH) {
@@ -74,24 +73,26 @@ function 	eventHandler() {
 		if (window.matchMedia("(min-width: 1200px)").matches) {
 
 			btnToggle.removeClass("on");
-			// $("body").removeClass("fixed");
 			menu.removeClass("active");
 			$("body").removeClass("fixed");
 		}
 	}
-
+	
 	$(window).resize(function () {
 		heightses();
-
+		
 	});
-
+	
 	heightses();
-
+	
 	// листалка по стр
-	$(" .top-nav li a, .scroll-link").click(function () {
+	$(".scroll-link").click(function () {
 		const elementClick = $(this).attr("href");
 		const destination = $(elementClick).offset().top;
-
+		
+		btnToggle.removeClass("on");
+		$("body").removeClass("fixed");
+		menu.removeClass("active");
 		$('html, body').animate({ scrollTop: destination }, 1100);
 
 		return false;
@@ -152,17 +153,6 @@ function 	eventHandler() {
 		
 	});
 
-	$('.scroll-link').on( 'click', function(){ 
-    var el = $(this);
-    var dest = el.attr('href'); 
-    if(dest !== undefined && dest !== '') { 
-        $('html').animate({ 
-            scrollTop: $(dest).offset().top 
-        }, 500
-        );
-    }
-    return false;
-	});
 	// $('.s-gal__slider\
 	// ,.slider-for2 ')
 	// 	.on('lazyLoaded', function (event, slick, image, imageSource) {

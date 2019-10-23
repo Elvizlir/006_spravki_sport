@@ -20,6 +20,7 @@ html {
 
 body,
 html {
+	margin: 0 auto;
 	font-size: rem(16);
 	@include media-breakpoint-up(md){
 		font-size: $em-base;
@@ -28,6 +29,7 @@ html {
 }
 
 body {
+	max-width: 1920px;
 	min-width: 320px;
 	position: relative;
 
