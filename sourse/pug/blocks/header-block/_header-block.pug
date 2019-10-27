@@ -1,21 +1,31 @@
-mixin header-block()
+mixin header-block(t)
 	// start header-block
 	+b.header-block.bg-wrap#header-block
 		+pic('header-bg.jpg','bg')(class='picture-bg')
 		.container
-			+e.main-wrap
-				h1
-					span ОФОРМИМ ЗА 24 ЧАСА 
-					| CПРАВКУ НА СОРЕВНОВАНИЯ
-				.row
-					+e.img-col.col-lg-auto
-						+e.img-wrap
-							img.res-i(src='img/@2x/header-img.jpg' alt='')
-					.col-lg
-						+e.price-block
-							+e.price 1500
-							+e.subprice рублей
-						+e.side-title Вы получите
-						+e.text ОФИЦИАЛЬНЫЙ ДОКУМЕНТ, заполненный в соответствии с&nbsp;Вашими требованиями, указанными в заявке.
-				+e.btn.scroll-link(href='#s-form') Заказать справку
+			if t == "main"
+				+e.main-wrap
+					h1
+						span ОФОРМИМ ЗА 24 ЧАСА 
+						| CПРАВКУ НА СОРЕВНОВАНИЯ
+					.row
+						+e.img-col.col-lg-auto
+							+e.img-wrap
+								img.res-i(src='img/@2x/header-img.jpg' alt='')
+						.col-lg
+							+e.price-block
+								+e.price 1500
+								+e.subprice рублей
+							+e.side-title Вы получите
+							+e.text ОФИЦИАЛЬНЫЙ ДОКУМЕНТ, заполненный в соответствии с&nbsp;Вашими требованиями, указанными в заявке.
+					+e.btn.scroll-link(href='#s-form') Заказать справку
+			
+			
+			if t == "thanks"
+				+e.main-wrap.thanks
+					h1
+						span Спасибо
+						| За вашу заявку
+					+e.text Мы свяжемся с Вами в ближайшее время
+					+e.btn(href='/') Вернуться на Главную
 	// end header-block
