@@ -12,7 +12,7 @@ $mail->CharSet = 'utf-8';
 ///от кого письмо  
 $mail->setFrom('info@info.com');
 
- $mail->addAddress('wol1414@gmail.com');
+ $mail->addAddress('elvizlir@gmail.com');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 
@@ -30,11 +30,31 @@ $html = '
     }
 
     if (!empty($_POST['name'])) {
-        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;">Name:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['name'] . '</b></td></tr>';
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;">Имя, фамилия, отчество:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['name'] . '</b></td></tr>';
+    }
+    
+    if (!empty($_POST['date'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;">Дата рождения:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['date'] . '</b></td></tr>';
+    }
+    
+    if (!empty($_POST['sport'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;">Вид спорта / соревнований:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['sport'] . '</b></td></tr>';
+    }
+    
+    if (!empty($_POST['adress'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;">Адрес прописки или регистрации:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['adress'] . '</b></td></tr>';
+    }
+    
+    if (!empty($_POST['polis'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;">Серия и номер полиса ОМС:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['polis'] . '</b></td></tr>';
     }
     
     if (!empty($_POST['tel'])) {
         $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;"> Телефон:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['tel'] . '</b></td></tr>';
+    }
+    
+    if (!empty($_POST['place'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;"> Место доставки, желаемое время:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['place'] . '</b></td></tr>';
     }
     
     if (!empty($_POST['email'])) {

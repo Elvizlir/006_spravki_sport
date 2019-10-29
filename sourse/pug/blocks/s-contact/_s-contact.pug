@@ -8,9 +8,10 @@ mixin s-contact()
 					+e.item-title Задать вопрос
 					+e.text Свяжемся с Вами через 30 минут
 					+form-wrap
-						+input('Введите имя')
-						+input('Введите телефон')
-						+input('Введите сообщение','textarea')
+						+input('','hidden','','order')(value='форма из подвала')
+						+input('Введите имя','','','name')(required)
+						+input('Введите телефон','tel','','tel')(required)
+						+input('Введите сообщение','textarea','','text')(required)
 						+e.btn.btn(type="submit") Задать вопрос
 				.col-xl.col-md-6.order-md-last
 					+e.map-block

@@ -165,39 +165,42 @@
 						<h3>Оформить заявку</h3>
 						<div class="form-wrap">
 							<form>
+								<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="hidden" placeholder="" name="order" value="форма на синем фоне"/>
+								</div>
+								<!-- +e.input-wrap-->
 								<div class="row">
 									<div class="col-lg-4 col-md-6">
-										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Фамилия, Имя, Отчество*" name="text"/>
+										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Фамилия, Имя, Отчество*" name="name" required="required"/>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-lg-4 col-md-6">
-										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Дата рождения" name="text"/>
+										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Дата рождения" name="date"/>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-lg-4 col-md-6">
-										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Вид спорта / соревнований" name="text"/>
+										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Вид спорта / соревнований" name="sport"/>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-lg-4 col-md-6">
-										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Адрес прописки или регистрации" name="text"/>
+										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Адрес прописки или регистрации" name="adress"/>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-lg-4 col-md-6">
-										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Серия и номер полиса ОМС (при наличии)" name="text"/>
+										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Серия и номер полиса ОМС (при наличии)" name="polis"/>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-lg-4 col-md-6">
-										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Введите номер телефона" name="text"/>
+										<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="tel" placeholder="Введите номер телефона" name="tel" required="required"/>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-md-8">
-										<div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Место доставки (станция метро или адрес), желаемое время" name="textarea"></textarea>
+										<div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Место доставки (станция метро или адрес), желаемое время" name="place"></textarea>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
@@ -661,25 +664,28 @@
 						<div class="col-xl-4">
 							<div class="form-wrap">
 								<form>
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Фамилия, Имя, Отчество*" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="hidden" placeholder="" name="order" value="форма из блока &quot;Оформите заявку прямо сейчас&quot;"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Дата рождения" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Фамилия, Имя, Отчество*" name="name" required="required"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Вид спорта / соревнований" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Дата рождения" name="date"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Адрес прописки или регистрации" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Вид спорта / соревнований" name="sport"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Серия и номер полиса ОМС (при наличии)" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Адрес прописки или регистрации" name="adress"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Введите номер телефона*" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Серия и номер полиса ОМС (при наличии)" name="polis"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Место достаки (станция метро или адрес), джелаемое время" name="textarea"></textarea>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="tel" placeholder="Введите номер телефона*" name="tel" required="required"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Место достаки (станция метро или адрес), джелаемое время" name="place"></textarea>
 									</div>
 									<!-- +e.input-wrap-->
 									<button class="form-wrap__btn btn" type="submit">Оформить заявку
@@ -937,13 +943,16 @@
 							</div>
 							<div class="form-wrap">
 								<form>
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Введите имя" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="hidden" placeholder="" name="order" value="форма из подвала"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Введите телефон" name="text"/>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Введите имя" name="name" required="required"/>
 									</div>
 									<!-- +e.input-wrap-->
-									<div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Введите сообщение" name="textarea"></textarea>
+									<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="tel" placeholder="Введите телефон" name="tel" required="required"/>
+									</div>
+									<!-- +e.input-wrap-->
+									<div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Введите сообщение" name="text" required="required"></textarea>
 									</div>
 									<!-- +e.input-wrap-->
 									<button class="form-wrap__btn btn" type="submit">Задать вопрос

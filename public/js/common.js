@@ -184,14 +184,13 @@ function eventHandler() {
 			data: th.serialize()
 		}).success(function () {
 			// $.magnificPopup.close();
-			$.magnificPopup.open({
-				items: {
-					src: '#thanks',
-					// can be a HTML string, jQuery object, or CSS selector
-					type: 'inline'
-				}
-			}); // window.location.replace("/thanks.html");
-
+			// $.magnificPopup.open({
+			// 	items: {
+			// 		src: '#thanks', // can be a HTML string, jQuery object, or CSS selector
+			// 		type: 'inline'
+			// 	}
+			// })
+			window.location.replace("/01-thanks.html");
 			setTimeout(function () {
 				// Done Functions
 				th.trigger("reset"); // $.magnificPopup.close();
